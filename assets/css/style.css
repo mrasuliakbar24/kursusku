@@ -805,3 +805,279 @@ body {
     background: #211512 !important;
     color: white !important;
 }
+
+/* =====================================================
+   RINGKASAN BIAYA - KURSU SKU
+   ===================================================== */
+
+.result-page .cost-summary {
+  width: 100%;
+  max-width: 818px;
+  margin: 24px auto 40px auto;
+  padding: 28px 26px;
+
+  background: #1c1717;
+
+  border: 1px solid #63302a;
+  border-radius: 14px;
+
+  box-sizing: border-box;
+}
+
+
+/* Judul Ringkasan Biaya */
+
+.result-page .cost-summary h2 {
+  margin: 0 0 24px 0;
+
+  color: #ffffff;
+
+  font-size: 28px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+
+/* Setiap baris */
+
+.result-page .cost-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  padding: 14px 0;
+
+  border-bottom: 1px solid #3a2927;
+
+  box-sizing: border-box;
+}
+
+
+/* Label sebelah kiri */
+
+.result-page .cost-row strong {
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+/* Nilai sebelah kanan */
+
+.result-page .cost-row span {
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 400;
+
+  text-align: right;
+}
+
+
+/* =====================================================
+   TOTAL BIAYA
+   ===================================================== */
+
+.result-page .cost-row.total {
+  margin-top: 10px;
+  padding: 18px 0 4px 0;
+
+  border-top: 2px solid #b51e23;
+  border-bottom: none;
+}
+
+
+.result-page .cost-row.total strong {
+  color: #ff3838;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.result-page .cost-row.total span {
+  color: #ff3838;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+  .result-page .cost-summary {
+    width: 100%;
+    padding: 22px 20px;
+  }
+
+  .result-page .cost-summary h2 {
+    font-size: 24px;
+  }
+
+  .result-page .cost-row strong,
+  .result-page .cost-row span {
+    font-size: 14px;
+  }
+
+  .result-page .cost-row.total strong,
+  .result-page .cost-row.total span {
+    font-size: 18px;
+  }
+
+}
+
+/* =====================================================
+   LAYOUT DATA PENDAFTAR + RINGKASAN BIAYA
+   ===================================================== */
+
+.result-columns {
+  display: grid;
+
+  grid-template-columns: 1.15fr 0.85fr;
+
+  gap: 24px;
+
+  width: 100%;
+
+  align-items: stretch;
+}
+
+
+/* =====================================================
+   DATA PENDAFTAR
+   ===================================================== */
+
+.result-columns .summary-card {
+  width: 100%;
+  height: 100%;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   RINGKASAN BIAYA
+   ===================================================== */
+
+.result-columns .cost-summary {
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+
+  padding: 28px 26px;
+
+  background: #1c1717;
+
+  border: 1px solid #63302a;
+  border-radius: 14px;
+
+  box-sizing: border-box;
+}
+
+
+/* Judul */
+
+.result-columns .cost-summary h2 {
+  margin: 0 0 24px 0;
+
+  color: #ffffff;
+
+  font-size: 28px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+
+/* Baris biaya */
+
+.result-columns .cost-row {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 14px 0;
+
+  border-bottom: 1px solid #3a2927;
+
+  box-sizing: border-box;
+}
+
+
+/* Label */
+
+.result-columns .cost-row strong {
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+/* Nilai */
+
+.result-columns .cost-row span {
+  color: #ffffff;
+
+  font-size: 16px;
+
+  text-align: right;
+}
+
+
+/* =====================================================
+   TOTAL BIAYA
+   ===================================================== */
+
+.result-columns .cost-row.total {
+  margin-top: 10px;
+
+  padding-top: 18px;
+
+  border-top: 2px solid #b51e23;
+  border-bottom: none;
+}
+
+
+.result-columns .cost-row.total strong,
+.result-columns .cost-row.total span {
+
+  color: #ff3838;
+
+  font-size: 20px;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 850px) {
+
+  .result-columns {
+
+    grid-template-columns: 1fr;
+
+    gap: 24px;
+
+  }
+
+  .result-columns .cost-summary {
+
+    height: auto;
+
+  }
+
+}
